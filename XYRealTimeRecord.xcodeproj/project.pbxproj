@@ -13,8 +13,7 @@
 		9B7CE5171E7BCBBE00528B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7CE5151E7BCBBE00528B7D /* Main.storyboard */; };
 		9B7CE5191E7BCBBE00528B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7CE5181E7BCBBE00528B7D /* Assets.xcassets */; };
 		9B7CE51C1E7BCBBE00528B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7CE51A1E7BCBBE00528B7D /* LaunchScreen.storyboard */; };
-		9B7CE5271E7BCBBF00528B7D /* XYRealTimeRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7CE5261E7BCBBF00528B7D /* XYRealTimeRecordTests.m */; };
-		9B7CE5321E7BCBBF00528B7D /* XYRealTimeRecordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7CE5311E7BCBBF00528B7D /* XYRealTimeRecordUITests.m */; };
+		9B7CE5411E7BD11200528B7D /* XYRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7CE5401E7BD11200528B7D /* XYRecorder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +45,9 @@
 		9B7CE51B1E7BCBBE00528B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B7CE51D1E7BCBBE00528B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B7CE5221E7BCBBF00528B7D /* XYRealTimeRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYRealTimeRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B7CE5261E7BCBBF00528B7D /* XYRealTimeRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYRealTimeRecordTests.m; sourceTree = "<group>"; };
-		9B7CE5281E7BCBBF00528B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B7CE52D1E7BCBBF00528B7D /* XYRealTimeRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYRealTimeRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B7CE5311E7BCBBF00528B7D /* XYRealTimeRecordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYRealTimeRecordUITests.m; sourceTree = "<group>"; };
-		9B7CE5331E7BCBBF00528B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7CE53F1E7BD11200528B7D /* XYRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRecorder.h; sourceTree = "<group>"; };
+		9B7CE5401E7BD11200528B7D /* XYRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRecorder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				9B7CE50B1E7BCBBE00528B7D /* XYRealTimeRecord */,
-				9B7CE5251E7BCBBF00528B7D /* XYRealTimeRecordTests */,
-				9B7CE5301E7BCBBF00528B7D /* XYRealTimeRecordUITests */,
 				9B7CE50A1E7BCBBE00528B7D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +100,8 @@
 				9B7CE5101E7BCBBE00528B7D /* AppDelegate.m */,
 				9B7CE5121E7BCBBE00528B7D /* ViewController.h */,
 				9B7CE5131E7BCBBE00528B7D /* ViewController.m */,
+				9B7CE53F1E7BD11200528B7D /* XYRecorder.h */,
+				9B7CE5401E7BD11200528B7D /* XYRecorder.m */,
 				9B7CE5151E7BCBBE00528B7D /* Main.storyboard */,
 				9B7CE5181E7BCBBE00528B7D /* Assets.xcassets */,
 				9B7CE51A1E7BCBBE00528B7D /* LaunchScreen.storyboard */,
@@ -120,24 +117,6 @@
 				9B7CE50D1E7BCBBE00528B7D /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9B7CE5251E7BCBBF00528B7D /* XYRealTimeRecordTests */ = {
-			isa = PBXGroup;
-			children = (
-				9B7CE5261E7BCBBF00528B7D /* XYRealTimeRecordTests.m */,
-				9B7CE5281E7BCBBF00528B7D /* Info.plist */,
-			);
-			path = XYRealTimeRecordTests;
-			sourceTree = "<group>";
-		};
-		9B7CE5301E7BCBBF00528B7D /* XYRealTimeRecordUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9B7CE5311E7BCBBF00528B7D /* XYRealTimeRecordUITests.m */,
-				9B7CE5331E7BCBBF00528B7D /* Info.plist */,
-			);
-			path = XYRealTimeRecordUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +186,7 @@
 				TargetAttributes = {
 					9B7CE5081E7BCBBE00528B7D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6Z3N632GY5;
 						ProvisioningStyle = Automatic;
 					};
 					9B7CE5211E7BCBBF00528B7D = {
@@ -275,6 +255,7 @@
 			files = (
 				9B7CE5141E7BCBBE00528B7D /* ViewController.m in Sources */,
 				9B7CE5111E7BCBBE00528B7D /* AppDelegate.m in Sources */,
+				9B7CE5411E7BD11200528B7D /* XYRecorder.m in Sources */,
 				9B7CE50E1E7BCBBE00528B7D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B7CE5271E7BCBBF00528B7D /* XYRealTimeRecordTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B7CE5321E7BCBBF00528B7D /* XYRealTimeRecordUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6Z3N632GY5;
 				INFOPLIST_FILE = XYRealTimeRecord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zxy.XYRealTimeRecord;
@@ -435,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6Z3N632GY5;
 				INFOPLIST_FILE = XYRealTimeRecord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zxy.XYRealTimeRecord;
